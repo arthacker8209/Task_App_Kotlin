@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">my_task_app</string>
+    <string name="example_task">Example Task</string>
+    <string name="important_task">Important Task</string>
+    <string name="enter_a_task">Enter a task</string>
+    <string name="search">Search</string>
+    <string name="sort">Sort</string>
+    <string name="sort_by_name">Sort By Name</string>
+    <string name="sort_by_date">Sort By Date</string>
+    <string name="hide_completed">Hide Completed</string>
+    <string name="delete_completed">Delete Completed</string>
+</resources>

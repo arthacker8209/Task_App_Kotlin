@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="10dp"
+
+    >
+
+    <RelativeLayout
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <CheckBox
+        android:id="@+id/checkbox_task_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="0dp"
+        android:layout_alignParentStart="true"
+        />
+
+    <TextView
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:id="@+id/tv_task"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:layout_toStartOf="@+id/priority"
+        android:ellipsize="end"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/example_task"
+        android:layout_alignTop="@+id/checkbox_task_status"
+        android:layout_alignBottom="@+id/checkbox_task_status"
+        android:layout_toEndOf="@+id/checkbox_task_status"
+        android:gravity="center_vertical"
+        />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_priority"
+            android:id="@+id/priority"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
