@@ -9,7 +9,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.My_task_app">
+        android:theme="@style/slash_screen">
         <activity android:name=".ui.MainActivity"
             android:windowSoftInputMode="adjustResize"
             >

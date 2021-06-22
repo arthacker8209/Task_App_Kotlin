@@ -1,7 +1,6 @@
 package com.example.my_task_app.ui.tasks
 
 import android.view.LayoutInflater
-import android.view.OrientationEventListener
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.DiffUtil

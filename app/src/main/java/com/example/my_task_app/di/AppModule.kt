@@ -2,7 +2,6 @@ package com.example.my_task_app.di
 
 import android.app.Application
 import androidx.room.Room
-import androidx.room.RoomDatabase
 import com.example.my_task_app.data.TaskDataBase
 import dagger.Module
 import dagger.Provides

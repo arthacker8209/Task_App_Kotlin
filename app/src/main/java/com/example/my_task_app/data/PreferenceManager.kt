@@ -2,7 +2,6 @@ package com.example.my_task_app.data
 
 import android.content.Context
 import android.util.Log
-import androidx.datastore.createDataStore
 import androidx.datastore.preferences.createDataStore
 import androidx.datastore.preferences.edit
 import androidx.datastore.preferences.emptyPreferences
@@ -53,7 +52,6 @@ class PreferenceManager @Inject constructor(@ApplicationContext context: Context
             preferences[preferencesKey.HIDE_COMPLETED]= isHidden
         }
     }
-
 
     private object preferencesKey{
         val SORT_ORDER = preferencesKey<String>("sort_order")

@@ -10,11 +10,9 @@ import com.example.my_task_app.data.TaskDao
 import com.example.my_task_app.ui.ADD_TASK_RESULT_OK
 import com.example.my_task_app.ui.EDIT_TASK_RESULT_OK
 import kotlinx.coroutines.channels.Channel
-import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.flow.receiveAsFlow
-import kotlinx.coroutines.isActive
 import kotlinx.coroutines.launch
 
 class TaskViewModel @ViewModelInject constructor(

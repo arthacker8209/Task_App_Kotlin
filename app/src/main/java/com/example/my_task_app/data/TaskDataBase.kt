@@ -1,13 +1,10 @@
 package com.example.my_task_app.data
 
-import android.content.Context
 import androidx.room.Database
-import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.sqlite.db.SupportSQLiteDatabase
 import com.example.my_task_app.di.ApplicationScope
 import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.internal.synchronized
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 import javax.inject.Provider
@@ -22,14 +19,10 @@ abstract class TaskDataBase : RoomDatabase() {
                @ApplicationScope private val applicationScope:CoroutineScope
 
         ) : RoomDatabase.Callback(){
-
                 override fun onCreate(db: SupportSQLiteDatabase) {
                         super.onCreate(db)
-
                        val dao= dataBase.get().taskDao()
                         applicationScope.launch {
-
-
                         }
                 }
         }
